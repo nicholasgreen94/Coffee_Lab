@@ -45,6 +45,18 @@
   color: #fff;
 }
 
+.navbar {
+  i {
+    font-size: 20px;
+    padding-right: 15px;
+    position: relative;
+    top: 20px;
+    @media only screen and (min-width: 781px) {
+      display: none;
+    }
+  }
+}
+
 .middle-content,
 .current-events,
 .main-footer {
@@ -93,7 +105,12 @@ textarea {
 
 textarea.form-control {
   height: 266.094px;
+  border: 1px solid #000;
   margin-bottom: 30px;
+  &:focus,
+  &:active {
+    
+  }
 }
 
 address  {
@@ -157,10 +174,19 @@ a {
   color: #000;
 }
 
+.navbar-nav {
+  display: none;
+  margin: 10px  32px 0 0;
+  @media only screen and (min-width: 782px) {
+    display: inline-block;
+    margin: 0;
+  }
+}
+
 ul.nav a {
+  color: #000;
   font-weight: 200;
   letter-spacing: 2px;
-  color: #000;
 }
 
 .navbar-default .navbar-nav > li > a.active {
