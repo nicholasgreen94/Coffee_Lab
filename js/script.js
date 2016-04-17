@@ -1,11 +1,13 @@
 
 $(function() {
   
-  $(".menu-btn").on("click", function() {
-    $(".navbar-nav")
+  $(".navbar-nav").hide();
+  
+  $(".menu-open").on("click", function() {
+    $(".navbar-nav").show()
     .addClass("text-right")
     .css(
-      "display","inline-block"
+      "display", "inline-block"
     )
     .children().css(
       "display", "inline-block"
@@ -18,7 +20,7 @@ $(function() {
   $(window).resize(function() {
     if ($(window).width() > 580) {
       $(".navbar-nav").css(
-        "margin", "14px 28px 0 0"
+        "margin", "14px 0 0 0"
       );
     }
   });
@@ -47,5 +49,10 @@ $(function() {
     $(".navbar-default").css(
       "border-bottom", "none"
     );
+    
+    $(".menu-close").on("click", function() {
+      $(".navbar-nav").hide();
+    });
+    
   });
 });

@@ -46,9 +46,11 @@
 }
 
 .navbar {
-  i {
+  .menu-open,
+  .menu-close {
+    cursor: pointer;
     font-size: 20px;
-    padding-right: 15px;
+    padding: 0 0 20px 20px;
     position: relative;
     top: 20px;
     @media only screen and (min-width: 781px) {
@@ -177,6 +179,7 @@ a {
 .navbar-nav {
   display: none;
   margin: 0;
+  text-transform: uppercase;
   @media only screen and (min-width: 782px) {
     display: inline-block;
     margin: 0;   
